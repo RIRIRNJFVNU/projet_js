@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My projet</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"> -->
+    <!-- script JS -->
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container--block">
+
+        <header class="container--nav">
+            <img class="logo" src="./pictures/logo.png" alt="Logo welcome">
+            <section class="nav bottom">
+                // ici
+                <button onclick="getMyConsole()" class="nav--add--btn" >
+                    <img class="add--play--btn" src="./pictures/plus.png" alt="add a game">
+                </button>
+            </section>
+        </header>
+
+        <main class="container--lists--chat">
+            <!-- add play modal -->
+            <div class="modal none" id="addPlayModal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <form action="" method="" id="add--play">
+                        <section class="modal-card-body modal-color">
+                            <div class="field">
+                                <label for="team_A" class="label">Name player A</label>
+                                <div class="control">
+                                    <input type="text" class="input" id="team_A" name="team_A" value="" placeholder="Player name">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="team_B" class="label">Name player B</label>
+                                <div class="control">
+                                    <input type="text" class="input" id="team_B" name="team_B" value="" placeholder="Player name">
+                                </div>
+                            </div>
+                        </section>
+                        <div class="modal-card-foot modal-color">
+                            <button onclick="submitForm()" type="submit" class="button">Let's go!</button>
+                            <button type="button" class="button close" >Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- /add play modal -->
+
+        </main>
+    </div>
+
+    <footer class="footer">
+            <a href="">Légals mentions</a>
+    </footer>
+
+</body>
+</html>
